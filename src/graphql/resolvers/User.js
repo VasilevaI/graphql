@@ -34,7 +34,7 @@ export default {
                 })
             })
         },
-        editUser: (root, {_id, username, email, password}) => {
+        editUser: (root, {_id, username, email, password,city}) => {
             return new Promise((resolve, reject) => {
                 User.findByIdAndUpdate({_id}, {$set: {username, email, password, city}}, {new: true}).exec((error, response) => {
                     error ? reject(error) : resolve(response);
