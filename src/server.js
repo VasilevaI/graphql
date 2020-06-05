@@ -4,9 +4,9 @@ import mongoose from "mongoose";
 import bodyParser from "body-parser";
 import cors from "cors";
 import schema from "./graphql/GraphQLSchema";
-
 import dotenv from "dotenv";
 import ValidationError from './graphql/ValidationError';
+
 dotenv.config();
 
 import jwt from "express-jwt";
